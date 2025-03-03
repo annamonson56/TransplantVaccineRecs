@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="title-section">
+      <h1 id="title">Pre-Transplant Vaccine Recommendations</h1>
+    </div>
+
+    <div id="info-section">
+      <h2 id="info">Use this webpage to identify a list of vaccines your patient would be eligible for prior to receiving a kidney or liver transplant.</h2>
+    </div>
+
+    <div id="question-section">
+      <h3 id="question">What vaccines has your patient received already?</h3>
+    </div>
+
+    <div id="flu-input-section">
+      <label for="flu-input">
+        <input type="checkbox" id="flu-input" name="flu-vaccine">
+        Influenza (2024-2025) vaccine within the last year
+      </label>
+      <small for="flu-input"> An annual dose is recommended for all patients&nbsp;<i> (Afluria, Fluzone, Flucelvax).</i> </small>
+    </div> 
+
+    <div id="covid-input-section">
+      <label for="covid-input">
+        <input type="checkbox" id="covid-input" name="covid-vaccine">
+        COVID (2024-2025) vaccine within the last year
+      </label>
+      <small for="covid-input"> An annual dose is recommended for all patients&nbsp;<i> (Comirnaty, Novavax).</i> </small>
+    </div>
+
+    <div id="tdap-input-section">
+      <label for="tdap-input">
+        <input type="checkbox" id="tdap-input" name="tdap-vaccine">
+        Tdap (Tetanus) vaccine within the last 10 years
+      </label>
+      <small for="tdap-input"> 1 dose is recommended every 10 years&nbsp;<i> (Adacel, Boostrix).</i> </small>
+    </div>
+
+    <div id="hepa-input-section">
+      <label for="hepa-input">
+        <input type="checkbox" id="hepa-input" name="hepa-vaccine">
+        Hepatitis A series
+      </label>
+      <small for="hepa-input"> 2 or 3 dose series recommended in patients with liver disease or HIV&nbsp;<i> (Havrix, Vaqta).</i> </small>
+    </div>
+
+    <div id="hepb-input-section">
+      <label for="hepb-input">
+        <input type="checkbox" id="hepb-input" name="hepb-vaccine">
+        Hepatitis B series
+      </label>
+      <small for="hepb-input"> 2, 3, or 4 dose series recommended for all patients&nbsp;<i> (Engerix-B, Heplisav-B).</i> </small>
+    </div>
+
+    <div id="zoster-input-section">
+      <label for="zoster-input">
+        <input type="checkbox" id="zoster-input" name="zoster-vaccine">
+        Zoster (Shingles) 2-dose vaccine series
+      </label>
+      <small for="zoster-input"> 2-dose series recommended for all patients 19 years+ who are or will be immunocompromised&nbsp;<i> (Shingrix).</i> </small>
+    </div>
+
+    <div id="pneumo-input-section">
+      <label for="pneumo-input">
+        <input type="checkbox" id="pneumo-input" name="pneumo-vaccine">
+        Pneumococcal (PCV20 or PCV21) vaccine or PCV15 + PPSV23 1 year later
+      </label>
+      <small for="pneumo-input"> If received PCV13 or PPSV23 only, need PCV20 one year later&nbsp;<i> (Prevnar 20, Capvaxive).</i> </small>
+    </div>
+
+    <div id="rsv-input-section">
+      <label for="rsv-input">
+        <input type="checkbox" id="rsv-input" name="rsv-vaccine">
+        RSV vaccine
+      </label>
+      <small for="rsv-input"> 1 dose before or during RSV season if 60+&nbsp;<i> (Arexvy).</i> </small>
+    </div>
+
+    <div id="meningococcal-input-section">
+      <label for="meningococcal-input">
+        <input type="checkbox" id="meningococcal-input" name="meningococcal-vaccine">
+        Meningococcal vaccine
+      </label>
+      <small for="meningococcal-input"> 2 doses indicated if asplenia, HIV, college student in dorm, complement deficiency&nbsp;<i> (MenACWY).</i> </small>
+    </div>
+
+    <div id="hib-input-section">
+      <label for="hib-input">
+        <input type="checkbox" id="hib-input" name="hib-vaccine">
+      H. influenza type b (Hib) vaccine
+      </label>
+      <small for="hib-input"> 1 dose indicated if asplenia&nbsp;<i> (ActHIB, Hiberix).</i> </small>
+    </div>
+
+    <div id="hpv-input-section">
+      <label for="hpv-input">
+        <input type="checkbox" id="hpv-input" name="hpv-vaccine">
+      Human papillomavirus (HPV) vaccine
+      </label>
+      <small for="hpv-input"> 3-dose series indicated patients age 15-27&nbsp;<i> (Gardasil 9).</i> </small>
+    </div>
+
+    <div id="patientspecifics-section">
+      <h4 id="question">Please fill in more patient specifics.</h4>
+    </div>
+
+    <div id="cirrhosis-input-section">
+      <label for="cirrhosis-input">
+        <input type="checkbox" id="cirrhosis-input" name="cirrhosis">
+    Liver disease?
+      </label>
+
+    </div>
+
+    <label for="hiv-input">
+        <input type="checkbox" id="hiv-input" name="hiv">
+     Diagnosed with human immunodeficiency virus (HIV)?</label>
+
+    </div>
+
+    <label for="asplenia-input">
+        <input type="checkbox" id="asplenia-input" name="asplenia">
+     Asplenia?
+      </label>
+
+    </div>
+
+    </div>
+
+    <label for="immunosuppressed-input">
+        <input type="checkbox" id="immunosuppressed-input" name="immunosuppressed">
+     Already immunosuppressed?
+      </label>
+
+    </div>
+
+    <label for="age">Patient's age: (years) </label>
+    <input type="number" id="age" name="age" min="0" max="120" placeholder="Enter age">
+
+
+    <div id="output-section">
+      <p>Output:</p>
+      <div id="output-lower-limit"></div>
+      <div id="output-upper-limit"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
